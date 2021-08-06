@@ -1,1 +1,0 @@
-REM Add a user batch file  net user Localtemp Sw1ngwa55! /add
