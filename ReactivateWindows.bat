@@ -10,9 +10,8 @@ FOR /F %%i IN (c:\temp\newwinkey.txt) DO Set WK=%%i
 
 Set "WINKEY=%WK%"
 
-slmgr /ipk %WINKEY%
+cscript //B "%windir%\system32\slmgr.vbs" /ipk %WINKEY%
 
 del C:\temp\winkey.txt
 
 del C:\temp\newwinkey.txt
-
