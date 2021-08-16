@@ -4,20 +4,12 @@ MKDIR C:\Temp
 
 c:\windows\ccmsetup\ccmsetup.exe /uninstall 
 
-timeout /t 45
-
-msiexec /uninstall GlobalProtect64.msi /quiet
-
-timeout /t 45
-
-"C:\Program Files (x86)\Juniper Networks\Junos Pulse\PulseUninstall.exe" /silent=1
-
-timeout /t 45
+timeout /t 30
 
 "C:\Program Files (x86)\Pulse Secure\Pulse\PulseUninstall.exe" /silent=1
 
-timeout /t 46 
+timeout /t 30
 
-"%ProgramFiles%\Aruba Networks\ClearPassOnGuard\uninst.exe" /silent=1
+"%ProgramFiles%\Aruba Networks\ClearPassOnGuard\uninst.exe" -exit
 
 )
