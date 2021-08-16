@@ -17,4 +17,9 @@ timeout /t 45
 timeout /t 45
 
 "C:\Program Files (x86)\Pulse Secure\Pulse\PulseUninstall.exe" /silent=1
+
+timeout /t 46 
+
+"%ProgramFiles%\Aruba Networks\ClearPassOnGuard\uninst.exe" /silent=1
+
 )
