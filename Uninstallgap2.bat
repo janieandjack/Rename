@@ -1,5 +1,3 @@
-@echo off
-
 >c:\temp\uninstall.txt 2>&1 (
 
 MKDIR C:\Temp
