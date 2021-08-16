@@ -4,9 +4,9 @@ cd c:\temp
 
 wmic path SoftwareLicensingService get OA3xOriginalProductKey > c:\temp\winkey.txt
 
-for /r %%a in (*.txt) do @type "%%a" |find "OA3xOriginalProductKey" /i /v >> "c:\temp\newwinkey.txt"
+for /r %%v in (*.txt) do @type "%%v" |find "OA3xOriginalProductKey" /i /v >> "c:\temp\newwinkey.txt"
 
-FOR /F %%i IN (c:\temp\newwinkey.txt) DO Set WK=%%i
+FOR /F %%h IN (c:\temp\newwinkey.txt) DO Set WK=%%h
 
 Set "WINKEY=%WK%"
 
