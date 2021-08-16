@@ -4,7 +4,7 @@
 
 MKDIR C:\Temp
 
-c:\windows\system32\ccmsetup\ccmsetup.exe /uninstall 
+c:\windows\ccmsetup\ccmsetup.exe /uninstall 
 
 timeout /t 45
 
