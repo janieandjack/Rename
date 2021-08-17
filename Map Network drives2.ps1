@@ -1,5 +1,5 @@
-﻿$us = Read-Host 'Enter Your User Name:' -AsSecureString
-$pw = Read-Host 'Enter Your Password:' -AsSecureString
+psexec -i $us = Read-Host 'Enter Your User Name:' -AsSecureString
+psexec -i $pw = Read-Host 'Enter Your Password:' -AsSecureString
 
 
 cmdkey.exe /add:corpfs24 /user:gymboree\$us /pass:$pw
