@@ -2,6 +2,6 @@
 
 $serial = (Get-Content c:\temp\SK.txt | Select -Index 3 | Format-Wide | Out-String).trim()
 
-#Rename-Computer -NewName "JJ-$serial" -Restart
+Rename-Computer -NewName "JJ-$serial" -Restart
 
-#del c:\temp\SK.txt
+del c:\temp\SK.txt
