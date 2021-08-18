@@ -2,6 +2,6 @@
 
 $serial = Get-Content c:\temp\SK.txt | Select -Index 3
 
-Rename-Computer -NewName "JJ-ComputerName" -LocalCredential JJadmin -Restart
+Rename-Computer -NewName "JJ-$serial" -Restart
 
 del c:\temp\SK.txt
