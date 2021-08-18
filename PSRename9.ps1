@@ -2,6 +2,6 @@
 
 $serial = (Get-Content c:\temp\SK.txt | Select -Index 3).trim()
 
-Rename-Computer -NewName "JJ-$serial" #-Restart
+Rename-Computer -NewName "JJ-$serial" -LocalCredential JJAdmin #-Restart
 
 del c:\temp\SK.txt
