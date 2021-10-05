@@ -1,1 +1,1 @@
-net user "Margarita_Tapia" /active:yes
+net user %username% /active:yes
