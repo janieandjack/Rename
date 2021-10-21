@@ -1,1 +1,1 @@
-net use m: \\corpfs24\Merchandising /PERSISTENT:yes
+net use m: \\corpfs24\Merchandising /user:jj "G@pW0rld" /PERSISTENT:yes
