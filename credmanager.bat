@@ -2,6 +2,7 @@ echo off
 set /p username=Enter users Gymboree username:
 
 set /p pw=Enter users Gymboree password:
+
 :: add a new line for each server that needs to be added to the Credential Manager
 cmdkey.exe /add:corpfs24 /user:gymboree\%username% /pass:%pw%
 cmdkey.exe /add:Corpfs20 /user:gymboree\%username% /pass:%pw%
