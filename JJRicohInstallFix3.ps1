@@ -9,8 +9,8 @@ If (!(test-path $path))
 DO
 { If (Get-Printer -Name " JJ Ricoh*")
 {
-    Get-Printer -Name " JJ Ricoh*" > "C:\temp\printers.txt"
-    $Printer = (Get-Content C:\temp\printers.txt)[3].trim("                              Local        Pro C5200Sseries E-44B... IP_172.22.2.... False    False      Print ")
+    Get-Printer -Name " JJ Ricoh*" | Format-List > "C:\temp\printers.txt"
+    $Printer = (Get-Content C:\temp\printers.txt)[2].trim("Name                         : ")
     Remove-Printer -Name " $Printer"
 }
 }
@@ -20,9 +20,9 @@ While (Get-Printer -Name " JJ Ricoh*")
 DO
 { If (Get-Printer -Name "JJ Ricoh 225 Bush (Copy*)")
 {
-    Get-Printer -Name "JJ Ricoh 225 Bush (Copy*)" > "C:\temp\printers2.txt"
-    $Printer = (Get-Content C:\temp\printers2.txt)[3].trim("                              Local        Pro C5200Sseries E-44B... IP_172.22.2.... False    False      Print ")
-    Remove-Printer -Name "$Printer"
+    Get-Printer -Name "JJ Ricoh 225 Bush (Copy*)" | Format-List > "C:\temp\printers2.txt"
+    $Printer2 = (Get-Content C:\temp\printers2.txt)[2].trim("Name                         : ")
+    Remove-Printer -Name "$Printer2"
 }
 }
 While (Get-Printer -Name "JJ Ricoh 225 Bush (Copy*)")
