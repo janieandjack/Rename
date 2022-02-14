@@ -1,3 +1,3 @@
-netdom join /d:janieandjack.com %COMPUTERNAME% /ud:doc /pd:V1scount9!
+netdom join /d:jandj.com %COMPUTERNAME% /ud:doc /pd:Sw1ngwa55
 
-shutdown.exe /r /t 00
+shutdown.exe /r /t 10
