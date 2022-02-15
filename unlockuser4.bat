@@ -1,1 +1,3 @@
-net user "customer care 11" "Cust0merc@r311" /active:yes
+set arg1=%1
+set arg2=%2
+net user "%arg1%" "%arg2%" /active:yes
